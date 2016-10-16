@@ -35,7 +35,7 @@ import java.util.concurrent.TimeUnit;
 public class MakeLoginWindow extends Application implements EventHandler, Runnable{
     private Button logout_button;
     private Thread mainThread;
-
+    private GitHub git = new GitHub();
     private Label login_txt;
     boolean exit;
     private Label password_txt;
@@ -166,6 +166,7 @@ public class MakeLoginWindow extends Application implements EventHandler, Runnab
         MenuItem exit = new MenuItem("Exit");
         MenuItem usermore = new MenuItem("Create A User");
         MenuItem delete = new MenuItem("Delete Previous Records");
+        MenuItem page = new MenuItem("Open GitHub Page(Requires Internet Connection)");
         about.setOnAction(e -> {
             setAboutScene(scene);
         });
@@ -191,7 +192,11 @@ public class MakeLoginWindow extends Application implements EventHandler, Runnab
             }
 
         });
-        menu.getItems().addAll(usermore, delete, about,exit);
+
+        page.setOnAction(e -> {
+            git.OpenPage();
+        });
+        menu.getItems().addAll(usermore, delete, about,exit, page);
 
         MenuBar mb = new MenuBar();
         mb.getMenus().addAll(menu);
@@ -360,6 +365,7 @@ public class MakeLoginWindow extends Application implements EventHandler, Runnab
 
     @Override
     public void handle(Event event) {
+
         if(event.getSource()==Submit){
             username = login_field.getText();
             if(login_field.getText().equals("") || password_field.getText().equals("")){
