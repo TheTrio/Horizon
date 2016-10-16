@@ -1,0 +1,232 @@
+<html xmlns="undefined">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Resize Pictures for Command Line</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	color: #333333;
+	line-height: 18px;
+}
+body {
+	background-color: #F5F5F5;
+	background-image: url(bg2.gif);
+	background-repeat: repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {color: #0000FF;}
+.Code {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #006600;
+	background-color: #EAEAEA;
+	background-image: url(bgc.gif);
+	background-repeat: repeat;
+	padding: 6px;
+	width: 600px;
+}
+.Dos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFFFFF;
+	background-color: #000000;
+	padding: 6px;
+	width: 600px;
+}
+-->
+</style>
+</head>
+<body>
+<table width="770" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="15"><h2 align="center">Resize Pictures for Command Line</h2>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;Introduction</h4>
+      <p><STRONG>Resize Pictures for Command Line </STRONG>is a comprehensive and   powerful image processing utility which allows the batch-processing of large   numbers of graphics files at the same time. Its reliability and stability also   make it the perfect graphics kernel for integration into your own software   applications or for Web-server integration.</p>
+      <p>Do you often find yourself overwhelmed with email images, electronic faxes and   document scans? Just use Resize Pictures for Command Line to settle on a single   uniform image size and file format, and discover that you can more easily:</p>
+      <p>In fact, by simply writing a command console "batch file", you could set up a   complex operation one time and then call the batch file every time you need to   repeat the operation on a new batch of images.</p>
+      <p><STRONG>Resize Pictures for Command Line </STRONG>can be easily   launched from any Visual C++, Visual Basic or Delphi application, or even from any ASP script. </p>
+      <h4>&nbsp;</h4>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;Create settings file in Settings Editor</h4>
+      <p>Create settings file of Resize Pictures for Command Line with <strong>Settings Editor</strong> very easily. It has a simple GUI for user. </p>
+      <p><img src="settingseditor.png" alt="Settings Editor" width="511" height="344"></p>
+      <p><strong>Resize pictures</strong>: Select <strong>Resize</strong> tab in the toolbar.</p>
+      <p>Then set a new Width and Height and choose on of the following option:</p>
+      <UL type="square">
+        <LI>"Use both height and width": both Height and Width will be used to resize an   picture (without keeping aspect)
+        <LI>"Use height (keep aspect)": Height will be used to calculate new Width   (keeping aspect)
+        <LI>"Use width (keep aspect)": Width will be used to calculate new Height   (keeping aspect)
+        <LI>"Use both height and width (keep aspect)": both Height and Width will be   used to resize an picture (with keeping aspect) </LI>
+      </UL>
+      <p><strong>Watermark  pictures</strong>: Select <strong>Watermark</strong> tab in the toolbar.</p>
+      <p>You can use Resize Pictures for Command Line as an authoring tool by adding watermarks to   your pictures. Watermark is a text or image that can be placed in the pictures. This can   be information, containing copyright information, your website address or any   other. </p>
+      <p>Also, you can change font settings, angle, position and opacity. </p>
+      <p><strong>Output settings</strong> : Select <strong>Output</strong> tab in the toolbar.</p>
+      <p>Then set save format and optimize value, and save folder etc. To specify an output file type - select an appropriate extension in the <strong>Save in format</strong> DropList.</p>
+      <p>You also can set 'Don't change the file creation date-time' and 'Remove Exif information   from pictures'.</p>
+      <p>&nbsp;</p>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;launch the program </h4>
+      <p>The command line parameters are very short and simple. There are: </p>
+      <div class="Dos">
+        <p><strong>Usage</strong>: rpcmd -s settingsfile -i sourcepath -o outputpath<br>
+            <br>
+            <strong>-s</strong> Set a settings file for processing. E.g. <em>-s demo.set</em>. We can use Settings Editor to create it easily!'</p>
+        <p> <strong>-i</strong> Set pictures source folder and file format. E.g. <em>-i D:\pics\*.jpg or -i D:\pics\*.*</em>.</p>
+        <p><strong>-o</strong> Save processed files to a specific output folder.  E.g. <em>-o D:\converted</em>.</p>
+      </div>
+      <p>&nbsp;</p>
+      <p>Below you can see example of launching Resize Pictures for Command Line. </p>
+      <p>1. Install the program on your computer.</p>
+      <p>2. Press 'Start" button, then select 'Run...' and press it.</p>
+      <IMG src="start.png" alt="Start" width="204" height="302">
+      <p>3. Enter command line, like: </p>
+      <div class="Code">e:\rpcmd\rpcmd -s demo.set -i e:\pics\*.* -o e:\out</div>
+      <p><strong>Please note</strong>: <u>e:\rpcmd\rpcmd</u> is a default installation directory name. If you didn't install the program on that, please change it.<br>
+        <br>
+      <IMG src="run.png" alt="Run" width="348" height="186"> </p>
+      <p><strong>Please note</strong>: <span style="color:#FF0000">now the program supports filename mask (filter). So you can type a filename mask such as: '1*.jpg' or '111???.jp*' etc. </span></p>
+      <p>4. Press 'OK' button.</p>
+      <IMG src="result.png" alt="Result">
+      <p>5. A DOS mode window will open and the processing will start.</p>
+      <p>6. Processed files will be stored in 'E:\out' folder.</p>
+      If you do processing often you may found it more convenient to make a   processing script as a BATCH-file.
+      <h4>&nbsp; </h4>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;launch the program from BATCH-file</h4>
+      <BR>
+      Launching the program from BATCH file may be very useful when you need to   make similar processing with variable parameters. Below we offer you two variants of using BATCH file:
+      <h5>First variant:</h5>
+      <UL>
+        <LI>Launch Notepad.
+        <LI>Copy the following into text file:<br>
+          <br>
+          <BR>
+          <div class="Code">e:\rpcmd\rpcmd -s demo.set -i e:\pics\*.* -o e:\out</div>
+          <br>
+        <LI>Save text file with extension .bat.
+        <LI>Launch processing by double click on this file. </LI>
+      </UL>
+      Second variant illustrates how to do the similar processing with different   source and destination folders.
+      <h5>Second variant:</h5>
+      <UL>
+        <LI>Launch Notepad.
+        <LI>Copy the following into text file:<br>
+          <br>
+          <br>
+          <div class="Code">e:\rpcmd\rpcmd -s demo.set -i %1 -o %2</div>
+          <br>
+        <LI>Save text file as 'resizepictures.bat'.
+        <LI>Press 'Start" button, then select 'Run...' and press it.
+        <LI>Enter command line:<br>
+          <br>
+            <br>
+          <div class="Code">resizepictures.bat e:\pics\*.* -o e:\out </div>
+            <br>       
+        <LI>Press 'OK' button. </LI>
+      </UL>
+      <p>In this example variable %1 will take on value 'e:\pics\*.*' and variable   %2 - 'e:\out'. </p>
+      <h4>&nbsp;</h4>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;launch the program from PERL script under Windows server</h4>
+      Below you can see example of launching Resize Pictures for Command Line   from PERL script under Windows server:
+      <h5>Example:</h5>
+      <div class="Code">
+        <p>#!/usr/bin/perl</p>
+        <p> print "Content-Type:   text/html\n\n";<br>
+          $ExecString = 'C:\rpcmd\rpcmd.exe   -s demo.set -i e:\pics\*.* -o e:\out'</p>
+        <p> exec 
+          $ExecString; </p>
+      </div>
+      <h4>&nbsp;</h4>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;launch the program from ASP</h4>
+      <p><BR>
+        You need to install Windows Script 5.6 on your server to launch   Resize Pictures for Command Line from ASP script. You can read more about   Microsoft Windows Script and download it from: <a href="http://msdn.microsoft.com/scripting/default.asp">http://msdn.microsoft.com/scripting/default.asp</a>.</p>
+      <p> If you don't know, what version of the Windows Script is already installed   on your server <A href="#1">click here</A>. 
+        Below you will find examples of launching Resize Pictures for Command Line   from ASP using JavaScript and Visual Basic syntax. </p>
+      <h5><strong>Example</strong> with JavaScript syntax:</h5>
+      <div class="Code">
+        <p>&lt;%@ LANGUAGE = "JAVASCRIPT" %&gt;<BR>
+          &lt;%<br>
+          <br>
+          // The path to   Resize Pictures for Command Line with its parameters<BR>
+          var commandLine =   "C:\\rpcmd\\rpcmd.exe   -s demo.set -i e:\\pics\\*.* -o e:\\out";<br>
+          <br>
+          // Creating a WSH object<BR>
+          var WshShell =   Server.CreateObject("WScript.Shell"); <br>
+          <br>
+          // Launching   Resize Pictures for Command Line<BR>
+          var oExec = WshShell.Exec(commandLine); <br>
+          <br>
+          var Buf = "";<br>
+          <br>
+          // The program   response stream <BR>
+          while (!oExec.StdOut.AtEndOfStream) <br>
+          { <BR>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buf =   oExec.StdOut.Read(1); <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Buf == "\n") <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Buf =   "&lt;BR&gt;" + Buf;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<BR>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Writing out the program   response<BR>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response.Write(Buf); <br>
+          }<br>
+          <br>
+          WshShell = null;<br>
+          %&gt; </p>
+      </div>
+      <BR>
+      <h4>&nbsp;</h4>
+      <h5><strong>Example</strong> with Visual Basic syntax:</h5>
+      <div class="Code">
+        <p>&lt;%<BR>
+          ' Defining variables<BR>
+          Dim WshShell, oExec, CommandLine,   Buf </p>
+        <p>' The path to Resize Pictures for Command Line with its parameters<BR>
+          '   Don`t forget -nodlg key in demo version<BR>
+          CommandLine = "C:\\rpcmd\\rpcmd.exe   -s demo.set -i e:\\pics\\*.* -o e:\\out" </p>
+        <p>' Creating a WSH object <BR>
+          Set WshShell = Server.CreateObject("WScript.Shell") </p>
+        <p> ' Launching Resize Pictures for Command Line<BR>
+          Set oExec = WshShell.Exec(CommandLine)</p>
+        <p> ' The program response stream <BR>
+          Do While Not oExec.StdOut.AtEndOfStream <BR>
+          Buf = oExec.StdOut.Read(1)</p>
+        <p> '   If the current symbol is a line feed -&gt; the "&lt;BR&gt;" tag 
+          should be   added for HTML line feed<BR>
+          if Buf = Chr(13) then Buf = "&lt;BR&gt;" &amp;   Buf</p>
+        <p> ' Writing out the program response<BR>
+          Response.Write Buf<BR>
+          Loop<BR>
+          Set   WshShell = Nothing<BR>
+          %&gt; </p>
+      </div>
+      <p>&nbsp;</p>
+      <p><A name="1">&nbsp;</A><BR>
+        If you don't know, what version of the Windows Script is already installed   on your server:<BR>
+        Try to run one of example above, using your correct command line.</p>
+      <p>If an error page ("HTTP 500.100 - Internal Server Error - ASP error") will   appears and a text "Object doesn't support this property or method" will be in   the "Error type" item then Windows Script on your server has a version older   than 5.6 and you need to install Windows Script 5.6 from <A href="http://msdn.microsoft.com/scripting/default.asp">http://msdn.microsoft.com/scripting/default.asp</A>.</p>
+      <p>&nbsp;</p>
+      <h4><img src="arr.gif" alt="Arr" width="13" height="13">&nbsp;Registration</h4>
+      <p><strong>Resize Pictures for Command Line</strong> is a try-and-buy program. The unregistered copy allow you to evaluate it and allows you to process 30 pictures at a time.</p>
+      <p>Registration means two steps:</p>
+      <p><STRONG>Step 1. Buy Now</STRONG></p>
+      <p>If you decided to buy <strong>Resize Pictures for Command Line</strong>, please click <strong>Register Now</strong> button on  the toolbar of <strong>Settings Editor</strong>. Open the registration dialog box. Then click   'Buy Now' button and follow instructions on Internet pages. </p>
+      <p><STRONG>Step 2. Register</STRONG></p>
+      <p>Click <strong>Register Now</strong> button on  the toolbar of <strong>Settings Editor</strong> again. To open registration   dialog box. After enter your name, your email address and license key, you can press <strong>Enter Key</strong> button and complete the registration.</p>
+      <p>After registered, you can enjoy the exclusive service:</p>
+      <UL>
+        <LI>A free upgrade to all the future releases of the program;   
+        <LI>Free lifetime technical support by E-mail;   
+        <LI>Your name in the "About" dialog;   
+        <LI>Discounts for multiple licenses. </LI>
+      </UL>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
