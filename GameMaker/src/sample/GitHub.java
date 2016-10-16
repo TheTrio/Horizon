@@ -9,10 +9,10 @@ public class GitHub {
 
 
     // ...
-    public void OpenPage() {
+    public void OpenPage(String s) {
         if (Desktop.isDesktopSupported()) {
             try {
-                Desktop.getDesktop().browse(new URI("https://github.com/TheTrio/Horizon"));
+                Desktop.getDesktop().browse(new URI(s));
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (URISyntaxException e) {

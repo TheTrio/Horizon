@@ -162,6 +162,7 @@ public class MakeLoginWindow extends Application implements EventHandler, Runnab
         make_account.setOnAction(this);
 
         Menu menu = new Menu("File");
+        Menu help = new Menu("Help");
         MenuItem about = new MenuItem("About");
         MenuItem exit = new MenuItem("Exit");
         MenuItem usermore = new MenuItem("Create A User");
@@ -170,6 +171,7 @@ public class MakeLoginWindow extends Application implements EventHandler, Runnab
         about.setOnAction(e -> {
             setAboutScene(scene);
         });
+        MenuItem report = new MenuItem("Report Bugs and Issues");
 
         exit.setOnAction(e -> {
             System.exit(0);
@@ -193,13 +195,17 @@ public class MakeLoginWindow extends Application implements EventHandler, Runnab
 
         });
 
-        page.setOnAction(e -> {
-            git.OpenPage();
+        report.setOnAction(e -> {
+            git.OpenPage("https://github.com/TheTrio/Horizon/issues");
         });
-        menu.getItems().addAll(usermore, delete, about,exit, page);
+        page.setOnAction(e -> {
+            git.OpenPage("https://github.com/TheTrio/Horizon");
+        });
+        menu.getItems().addAll(usermore, delete, about,exit);
+        help.getItems().addAll(page, report);
 
         MenuBar mb = new MenuBar();
-        mb.getMenus().addAll(menu);
+        mb.getMenus().addAll(menu, help);
 
         bb.setTop(mb);
 
