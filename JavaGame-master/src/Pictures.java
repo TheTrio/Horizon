@@ -22,7 +22,7 @@ public class Pictures {
 		Bounce = sp.getAudioClip(url, "Music\\bounce.au");
 		back = sp.getAudioClip(url, "Music\\Alan.au");
 		platform = sp.getImage(url, "Images\\Tiles.png");
-		earth = sp.getImage(url, "Images\\Earth.png");
+		earth = sp.getImage(url, "Images\\Earth.gif");
 		
 		Pictures.sp = sp;
 	}

@@ -213,7 +213,7 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 	public void AskQuestion(Boolean xy) {
 
 
-		if(xy) {
+		/*if(xy) {
 			String ans;
 			if (pics[sw].equals("Images\\Taj.png")) {
 				Random r = new Random();
@@ -288,7 +288,20 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 
 			}
 		}
-		if (levelcheck > 1000) {
+		*/
+
+		if(levelcheck!=0 && levelcheck%500==0 && gameOver!=true){
+			Random xyz = new Random();
+			int x = xyz.nextInt(2);
+
+			if(x==0){
+				JOptionPane.showMessageDialog(null, "Taj Mahal Was One Of the Greatest Inventions");
+			}else {
+				JOptionPane.showMessageDialog(null, "You are Chutia");
+			}
+		}
+
+		if (levelcheck > 1000 && gameOver!=true) {
 			Pictures.level++;
 			sw = rw.nextInt(7);
 			levelcheck = 0;
@@ -465,9 +478,10 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 		g.setColor(Color.RED);
 
 		if(gameOver!=true && Platform.godMode!=true){
-			if(sp.getWidth() > 850)
-				g.drawString("Level " + Pictures.level, getWidth() - 150, getHeight() - 100 * 7);
-			else
+			if(sp.getWidth() > 850) {
+				System.out.println("Hello World");
+				g.drawString("Level " + Pictures.level, getWidth() - 150, getHeight() - 100 * 5);
+			}else
 				g.drawString("Level " + Pictures.level, getWidth() - 150, getHeight() - 100 * 6);
 		}else if(gameOver!=true && Platform.godMode==true){
 			g.clearRect(750,100,20,20);
@@ -483,6 +497,7 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 			g.drawString("Level " + Pictures.level + "- Game Over!", getWidth()/2,getHeight()/2);
 
 			if(ij==1){
+				g.drawString("Level " + Pictures.level + "- Game Over!", getWidth()/2,getHeight()/2);
 				ij++;
 			}
 			g.setColor(Color.WHITE);
