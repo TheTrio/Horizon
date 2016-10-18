@@ -89,6 +89,7 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 		} catch (Exception e) {
 	}
 	sw = rw.nextInt(7);
+	sw = 0;
 	city = getImage(url, pics[sw]);
 	Pictures P = new Pictures(this);
 	}
@@ -231,8 +232,7 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 
 						break;
 					case 3:
-
-						JOptionPane.showMessageDialog(null, "The magnificent edifice is bounded on three sides by red stone walls.\n It is constructed completely of white marble.\n The emperor had marbles of the best quality brought from Rajasthan, Afghanistan, Tibet and China.");
+					OptionPane.showMessageDialog(null, "The magnificent edifice is bounded on three sides by red stone walls.\n It is constructed completely of white marble.\n The emperor had marbles of the best quality brought from Rajasthan, Afghanistan, Tibet and China.");
 						break;
 					case 4:
 						JOptionPane.showMessageDialog(null, "It is believed that more than 28 different types of precious and semi-precious stones,\n including the striking lapis lazuli, were inlaid into the marble.");
@@ -290,15 +290,33 @@ public class StartingPoint extends Applet implements Runnable, KeyListener,
 		}
 		*/
 
-		if(levelcheck!=0 && levelcheck%500==0 && gameOver!=true){
+		if(levelcheck!=0 && levelcheck%300==0 && gameOver!=true){
 			Random xyz = new Random();
-			int x = xyz.nextInt(2);
 
-			if(x==0){
-				JOptionPane.showMessageDialog(null, "Taj Mahal Was One Of the Greatest Inventions");
-			}else {
-				JOptionPane.showMessageDialog(null, "You are Chutia");
+			switch (pics[sw]){
+				case "Images\\Taj.png" :
+					int w = xyz.nextInt(5) + 1;
+
+
+										switch (w){
+						case 1 : JOptionPane.showMessageDialog(null, "More than 20,000 people were put into building the Taj\n, including labourers, stonecutters, painters, embroidery artists, calligraphers, and many others.");
+							     break;
+						case 2 :
+							JOptionPane.showMessageDialog(null, "The magnificent edifice is bounded on three sides by red stone walls.\n It is constructed completely of white marble.\n The emperor had marbles of the best quality brought from Rajasthan, Afghanistan, Tibet and China.");
+							break;
+						case 3 :
+							JOptionPane.showMessageDialog(null, "It is believed that more than 28 different types of precious and semi-precious stones,\n including the striking lapis lazuli, were inlaid into the marble.");
+							break;
+						case 4 :
+							JOptionPane.showMessageDialog(null, "The construction of the Taj Mahal was begun in 1632, a year after the death of Empress Mumtaz.\n The construction was completed in the year 1653,\n which means that it took approximately 22 years to complete this astounding piece of architecture.");
+							break;
+						case 5 :
+							JOptionPane.showMessageDialog(null, "At that time, the estimated construction cost was a whopping sum of Rs. 32 million,\n which, when considered in terms of today’s value of money,\n would be something way above $1 billion.");
+							break;
+					}
+					break;
 			}
+
 		}
 
 		if (levelcheck > 1000 && gameOver!=true) {
