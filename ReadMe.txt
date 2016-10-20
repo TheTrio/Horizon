@@ -1,4 +1,4 @@
-v3.9.2
+v4.0.0
 
 Steps to Install Horizon
 
