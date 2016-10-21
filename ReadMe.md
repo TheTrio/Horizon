@@ -10,6 +10,7 @@ and has combined a game with the creativity of Knowledge. The Following are the 
 <li>Yash Hirani</li>
 <li>Aditya Agarwal</li>
 <li>Shivam</li>
+<li>Parth Pandey</li>
 </ol>
 </p>
 <hr>
@@ -39,7 +40,7 @@ all his
 </p>
 <h3>Bug Testing</h3>
 <p>
-The Testing of this program is done by Shivam, Aditya, Madhu Ma'am and Avdesh Sir. They really helped in finding 
+The Testing of this program is done by Parth, Shivam, Aditya, Madhu Ma'am and Avdesh Sir. They really helped in finding 
 out bugs of the Program
 </p>
 <hr>
