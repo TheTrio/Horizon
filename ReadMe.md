@@ -11,6 +11,8 @@ and has combined a game with the creativity of Knowledge. The Following are the 
 <li>Aditya Agarwal</li>
 <li>Shivam</li>
 <li>Parth Pandey</li>
+<li>Vidit</li>
+<li>Hamza</li>
 </ol>
 </p>
 <hr>
