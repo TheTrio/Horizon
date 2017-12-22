@@ -2,9 +2,7 @@
 <p>Note : This page is about the Project. To Know How to install, See the .txt File</p>
 <hr>
 <h2>The Team</h2>
-<p>The Horizon Team Comprises of 2 Members along with several helpers. The Horizon team believes that everyone has a right to knowledge
-
-and has combined a game with the creativity of Knowledge. The Following are the members of the Contributing Team
+<p>The Horizon Team Comprises of 2 Members(Yash and Shashwat) along with several non-technical folk who helped by giving various ideas.
 <ol>
 <li>Shashwat Khanna</li>
 <li>Yash Hirani</li>
